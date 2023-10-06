@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(225, 12%, 94%, 0.87); 
+}
+
+.hidden{
+    display: none;
+}
+
+.loginForm{
+    
+    justify-content: center; 
+    align-items: flex-start;
+    display: flex;
+}
+.loginForm .leftpart{
+    margin-top: 180px;
+    width:50%;
+    margin-left: -50px;
+}
+.loginForm .leftpart img{
+    width: 47%;
+} 
+.loginForm .leftpart p{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px;
+    width: 75%;
+    margin-top: -18px;
+}
+
+.loginForm .rightpart{
+    margin-top: 130px;
+    margin-left: -50px;
+    width:27%;
+    background-color: white;
+    padding: 10px;
+    padding-right: 25px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.062);
+}
+
+.rightpart form{
+    display: block;
+}
+.rightpart input , .rightpart button{
+    width: 95%;
+    height: 47px;
+    margin: 8px;
+    border-radius: 6px;
+    border:0.1em solid rgba(41, 41, 41, 0.137);
+}
+
+.rightpart input:focus-within{
+    outline: none;
+    border:0.1em solid  #638de7;
+    box-shadow: 0px 0em 0.2em #638de7;
+}
+
+.rightpart button{
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color:#0562eeda ;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.rightpart button#createAccount{
+    background-color: rgba(23, 167, 23, 0.829);
+    width: 57%;
+    font-size: 17px;
+    margin-left: 85px;
+    font-weight: 600;
+    margin-top: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+.rightpart button#createAccount:hover{
+    background-color: rgba(12, 160, 12, 0.712);
+}
+#emailError,#passwordError{
+    font-size: 11px;
+    margin-left: 10px;
+    color: red;
+}
+.rightpart hr{
+    margin-top: 20px;
+    border-color:rgba(255, 255, 255, 0.705) ;
+    width: 100%;
+}
+.rightpart a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 115px;
+
+}
+.rightpart input:placeholder-shown,.rightpart input{
+    padding: 2px 6px 2px 12px;
+    font-size: 16px;
+}
+
+#signupForm{
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 20px;
+    
+}
+
+.formContent{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 33%;
+    border-radius: 6px;
+    border-color: white;
+    box-shadow: 8px 5px 5px 3px rgba(0, 0, 0, 0.062);
+    position: relative;
+}
+
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 8px;
+}
+.subtext h1{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.subtext p1{
+    font-size: 14px;
+    color: rgb(94, 92, 92);
+}
+
+.subheader .close{
+    margin-top: -10px;
+    font-size: 40px;
+    color: rgb(109, 108, 108);
+    cursor: pointer;
+}
+
+.formContent #sumbissionForm{
+    padding: 15px;
+    
+}
+.formContent .namepart{
+    display: flex;
+    padding-bottom: 10px;
+}
+.namepart #fname{
+    margin-right: 10px;
+}
+.formContent .namepart input{
+    width: 50%;
+}
+.formContent .restpart input{
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.formContent input{
+    height: 35px;
+    border-radius: 6px;
+    border:0.1em solid rgba(41, 41, 41, 0.137);
+    background-color: rgba(226, 226, 255, 0.356);
+}
+.formContent input:focus-within{outline: none;}
+.formContent input:placeholder-shown,.formContent input{
+    padding: 2px 6px 2px 12px;
+    font-size: 16px;
+}
+
+.formContent .borderbutton{
+    display: flex;
+    justify-content: flex-start;
+}
+.formContent .borderbutton div{
+    margin: 8px;
+    margin-right: 12px;
+    margin-left: 0px;
+    padding: 5px;
+    padding-top: 0;
+    display: inline-block;
+    padding-bottom: 0px;
+    border: 1px solid rgba(212, 212, 212, 0.815);
+    border-radius: 5px;
+}
+#sumbissionForm .labelhead{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    position:absolute;
+}
+#sumbissionForm input[type='radio']
+{
+    margin-top: 2px;
+    margin-left: 105px;
+    cursor: pointer;
+}
+#sumbissionForm select{
+    width: 31%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(212, 212, 212, 0.815);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+#sumbissionForm #year{
+    margin-right: 0px;
+}
+#sumbissionForm label{
+    font-size: 12px;
+    color: rgb(53, 52, 52);
+}
+
+.formContent p{
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.formContent .centereditems{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.formContent .signupbtn{
+    width: 40%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color:rgba(23, 167, 23, 0.829);
+}
+
+.formContent .signupbtn:hover{
+    background-color: rgba(15, 238, 15, 0.712);
+}
+.formContent span p{
+    background-color:rgba(126, 4, 4, 0.753);
+    padding: 15px;
+    color: white;
+    position: absolute;
+}
+.formContent span p::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(126, 4, 4, 0.753);
+}
+.formContent span p#sureNameError::after{
+    left: 0%;
+    top: 50%;
+    margin-left: -12px;
+    border-color:  transparent  rgba(126, 4, 4, 0.753) transparent  transparent ;
+}
+.formContent #firstNameError{
+    margin-left: -130px;
+}
+.formContent #sureNameError{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.formContent #signEmailError
+{
+    margin-left: -400px;
+}
+.formContent #newPassErorr{
+    width: 60%;
+    margin-left:-310px;
+}
+.formContent #dateError{
+    width:70%;
+    margin-top: 10px;
+    margin-left: -355px;
+}
+
+.formContent #genderError{
+    margin-top: 20px;
+    margin-left: -355px;
+}
