@@ -33,7 +33,7 @@ body{
     font-weight: 500;
     margin: 30px;
     width: 75%;
-    margin-top: -18px;
+    margin-top: 10px;
 }
 
 .loginForm .rightpart{
@@ -302,4 +302,19 @@ body{
 .formContent #genderError{
     margin-top: 20px;
     margin-left: -355px;
+}
+
+footer{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+p1{
+    margin-left: 27px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #0562eeda;
+    
 }
